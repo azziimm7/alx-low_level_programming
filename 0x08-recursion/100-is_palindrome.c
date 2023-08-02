@@ -4,7 +4,7 @@
  * @s: string used
  * Return: string length
  */
-int lenght(char *s)
+int length(char *s)
 {
 	int i = 0;
 	if (*s)
