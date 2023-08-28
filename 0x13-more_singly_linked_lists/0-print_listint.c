@@ -8,7 +8,7 @@
 
 size_t print_listint(const listint_t *h)
 {
-	unsigned int nodes;
+	unsigned int nodes = 0;
 
 	while (h != NULL)
 	{
@@ -19,4 +19,3 @@ size_t print_listint(const listint_t *h)
 
 	return (nodes);
 }
-
