@@ -5,7 +5,6 @@
  * @h: the start of the list
  * Return: number of nodes
  */
-
 size_t print_listint(const listint_t *h)
 {
 	unsigned int nodes = 0;
@@ -16,6 +15,5 @@ size_t print_listint(const listint_t *h)
 		nodes++;
 		h = h->next;
 	}
-
 	return (nodes);
 }
