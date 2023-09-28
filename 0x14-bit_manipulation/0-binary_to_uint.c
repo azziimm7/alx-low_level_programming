@@ -7,21 +7,15 @@
  */
 unsigned int binary_to_uint(const char *b)
 {
-	unsigned int dec = 0; /* dec is the variable to hold the decimal format */
+	unsigned int i = 0;
 
-	if (b == NULL)
+	if (!b)
 		return (0);
-
 	while (*b)
 	{
-		if (*b == '1')
-			dec = (dec << 1) | 1;
-		else if (*b == '0')
-			dec <<= 1;
-		else
+		if (*b != '0' && *b != '1')
 			return (0);
-		b++;
+		i = i * 2 + (*b++ - '0');
 	}
-
-	return (dec);
+	return (i);
 }
