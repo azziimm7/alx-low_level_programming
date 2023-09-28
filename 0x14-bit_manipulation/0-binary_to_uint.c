@@ -3,6 +3,7 @@
 /**
  * binary_to_uint - convert the binary number to a decimal
  * @b: points to a string of 0's and 1's
+ * @i: the decimal format of the binary
  * Return: decimal format of the binary
  */
 unsigned int binary_to_uint(const char *b)
